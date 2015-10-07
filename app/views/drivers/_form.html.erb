@@ -1,0 +1,65 @@
+<%= form_for(@driver) do |f| %>
+  <% if @driver.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@driver.errors.count, "error") %> prohibited this driver from being saved:</h2>
+
+      <ul>
+      <% @driver.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :identity %><br>
+    <%= f.text_field :identity %>
+  </div>
+  <div class="field">
+    <%= f.label :lastname %><br>
+    <%= f.text_area :lastname %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_area :address %>
+  </div>
+  <div class="field">
+    <%= f.label :category_id %><br>
+    <%= f.text_field :category_id %>
+  </div>
+  <div class="field">
+    <%= f.label :class1 %><br>
+    <%= f.text_field :class1 %>
+  </div>
+  <div class="field">
+    <%= f.label :expeditiondate %><br>
+    <%= f.date_select :expeditiondate %>
+  </div>
+  <div class="field">
+    <%= f.label :revalidationdate %><br>
+    <%= f.date_select :revalidationdate %>
+  </div>
+  <div class="field">
+    <%= f.label :numberlicense %><br>
+    <%= f.text_field :numberlicense %>
+  </div>
+  <div class="field">
+    <%= f.label :dateexpiry %><br>
+    <%= f.date_select :dateexpiry %>
+  </div>
+  <div class="field">
+    <%= f.label :birthdate %><br>
+    <%= f.date_select :birthdate %>
+  </div>
+  <div class="field">
+    <%= f.label :sex_id %><br>
+    <%= f.text_field :sex_id %>
+  </div>
+  <div class="field">
+    <%= f.label :status_id %><br>
+    <%= f.text_field :status_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,80 @@
+/*
+Error: Invalid CSS after "	font-size:": expected expression (e.g. 1px, bold), was "}"
+        on line 9 of /home/ubuntu/workspace/taxixpress/app/assets/stylesheets/home.scss
+
+4: .tel{
+5: 	text-align:right;
+6: 	color:#FF9933;
+7: 	padding: 0 9px 3px;
+8: 	font-size:
+9: }
+
+Backtrace:
+/home/ubuntu/workspace/taxixpress/app/assets/stylesheets/home.scss:9
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/scss/parser.rb:1162:in `expected'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/script/lexer.rb:221:in `expected!'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/script/parser.rb:571:in `assert_expr'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/script/parser.rb:62:in `parse'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/scss/parser.rb:1024:in `sass_script'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/scss/parser.rb:877:in `value!'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/scss/parser.rb:750:in `block in try_declaration'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/scss/parser.rb:1138:in `call'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/scss/parser.rb:1138:in `rethrow'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/scss/parser.rb:763:in `try_declaration'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/scss/parser.rb:693:in `declaration_or_ruleset'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/scss/parser.rb:658:in `block_child'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/scss/parser.rb:650:in `block_contents'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/scss/parser.rb:639:in `block'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/scss/parser.rb:632:in `ruleset'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/scss/parser.rb:657:in `block_child'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/scss/parser.rb:647:in `block_contents'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/scss/parser.rb:117:in `stylesheet'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/scss/parser.rb:42:in `parse'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/engine.rb:403:in `_to_tree'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/plugin.rb:82:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/exec/sass_scss.rb:364:in `watch_or_update'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/rvm/gems/ruby-2.2.2/gems/sass-3.4.18/bin/scss:13:in `<top (required)>'
+/usr/local/rvm/gems/ruby-2.2.2/bin/scss:23:in `load'
+/usr/local/rvm/gems/ruby-2.2.2/bin/scss:23:in `<main>'
+*/
+
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #FF6633; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #FF9933; 
+  text-align: left; 
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #bbb;
+}
+td,th {
+    border-top: 1px solid #ddd;
+    padding: 4px 8px;
+}

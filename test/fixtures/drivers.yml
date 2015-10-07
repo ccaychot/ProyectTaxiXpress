@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  identity: MyString
+  lastname: MyText
+  address: MyText
+  category_id: 
+  class1: MyString
+  expeditiondate: 2015-10-06
+  revalidationdate: 2015-10-06
+  numberlicense: MyString
+  dateexpiry: 2015-10-06
+  birthdate: 2015-10-06
+  sex_id: 
+  status_id: 
+
+two:
+  identity: MyString
+  lastname: MyText
+  address: MyText
+  category_id: 
+  class1: MyString
+  expeditiondate: 2015-10-06
+  revalidationdate: 2015-10-06
+  numberlicense: MyString
+  dateexpiry: 2015-10-06
+  birthdate: 2015-10-06
+  sex_id: 
+  status_id: 

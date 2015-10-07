@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Lastnameandname:</strong>
+  <%= @reservation.lastnameandname %>
+</p>
+
+<p>
+  <strong>Dni:</strong>
+  <%= @reservation.dni %>
+</p>
+
+<p>
+  <strong>Phone1:</strong>
+  <%= @reservation.phone1 %>
+</p>
+
+<p>
+  <strong>Phone2:</strong>
+  <%= @reservation.phone2 %>
+</p>
+
+<p>
+  <strong>Mail:</strong>
+  <%= @reservation.mail %>
+</p>
+
+<p>
+  <strong>Reservationdate:</strong>
+  <%= @reservation.reservationdate %>
+</p>
+
+<p>
+  <strong>Whenbooking:</strong>
+  <%= @reservation.whenbooking %>
+</p>
+
+<p>
+  <strong>Point:</strong>
+  <%= @reservation.point %>
+</p>
+
+<p>
+  <strong>Startingdistrict:</strong>
+  <%= @reservation.startingdistrict %>
+</p>
+
+<p>
+  <strong>Pointofarrival:</strong>
+  <%= @reservation.pointofarrival %>
+</p>
+
+<p>
+  <strong>Districtarrival:</strong>
+  <%= @reservation.districtarrival %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @reservation.status %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @reservation.cost %>
+</p>
+
+<p>
+  <strong>Driver:</strong>
+  <%= @reservation.driver %>
+</p>
+
+<p>
+  <strong>Vehicle:</strong>
+  <%= @reservation.vehicle %>
+</p>
+
+<%= link_to 'Edit', edit_reservation_path(@reservation) %> |
+<%= link_to 'Back', reservations_path %>

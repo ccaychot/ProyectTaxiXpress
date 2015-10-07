@@ -1,0 +1,25 @@
+<%= simple_form_for(@reservation) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :lastnameandname %>
+    <%= f.input :dni %>
+    <%= f.input :phone1 %>
+    <%= f.input :phone2 %>
+    <%= f.input :mail %>
+    <%= f.input :reservationdate %>
+    <%= f.input :whenbooking %>
+    <%= f.input :point %>
+    <%= f.input :startingdistrict %>
+    <%= f.input :pointofarrival %>
+    <%= f.input :districtarrival %>
+    <%= f.association :status %>
+    <%= f.input :cost %>
+    <%= f.association :driver %>
+    <%= f.association :vehicle %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  licenseplate: MyString
+  brand_id: 
+  model_id: 
+  manufacturingyear: MyString
+  weight: 9.99
+  width: 9.99
+  grossweight: 9.99
+  dryweight: 9.99
+  usefulload: 9.99
+  typeofvehicle_id: 
+  datesoat: 2015-10-06
+  datetechnicalreview: 2015-10-06
+
+two:
+  licenseplate: MyString
+  brand_id: 
+  model_id: 
+  manufacturingyear: MyString
+  weight: 9.99
+  width: 9.99
+  grossweight: 9.99
+  dryweight: 9.99
+  usefulload: 9.99
+  typeofvehicle_id: 
+  datesoat: 2015-10-06
+  datetechnicalreview: 2015-10-06

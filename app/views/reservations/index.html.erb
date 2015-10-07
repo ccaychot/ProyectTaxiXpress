@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Reservations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lastnameandname</th>
+      <th>Dni</th>
+      <th>Phone1</th>
+      <th>Phone2</th>
+      <th>Mail</th>
+      <th>Reservationdate</th>
+      <th>Whenbooking</th>
+      <th>Point</th>
+      <th>Startingdistrict</th>
+      <th>Pointofarrival</th>
+      <th>Districtarrival</th>
+      <th>Status</th>
+      <th>Cost</th>
+      <th>Driver</th>
+      <th>Vehicle</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reservations.each do |reservation| %>
+      <tr>
+        <td><%= reservation.lastnameandname %></td>
+        <td><%= reservation.dni %></td>
+        <td><%= reservation.phone1 %></td>
+        <td><%= reservation.phone2 %></td>
+        <td><%= reservation.mail %></td>
+        <td><%= reservation.reservationdate %></td>
+        <td><%= reservation.whenbooking %></td>
+        <td><%= reservation.point %></td>
+        <td><%= reservation.startingdistrict %></td>
+        <td><%= reservation.pointofarrival %></td>
+        <td><%= reservation.districtarrival %></td>
+        <td><%= reservation.status %></td>
+        <td><%= reservation.cost %></td>
+        <td><%= reservation.driver %></td>
+        <td><%= reservation.vehicle %></td>
+        <td><%= link_to 'Show', reservation %></td>
+        <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td>
+        <td><%= link_to 'Destroy', reservation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Reservation', new_reservation_path %>
